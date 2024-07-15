@@ -1,16 +1,16 @@
-package com.blayze.blayze.ui.gallery;
+package com.blayze.blayze.ui.meditation;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class MeditationViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public MeditationViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is meditation fragment");
     }
 
     public LiveData<String> getText() {

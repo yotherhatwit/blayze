@@ -1,4 +1,4 @@
-package com.blayze.blayze.ui.gallery;
+package com.blayze.blayze.ui.sleep;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.blayze.blayze.databinding.FragmentGalleryBinding;
+import com.blayze.blayze.databinding.FragmentSleepBinding;
 
-public class GalleryFragment extends Fragment {
-
-    private FragmentGalleryBinding binding;
+public class SleepFragment extends Fragment{
+    private FragmentSleepBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        SleepViewModel sleepViewModel =
+                new ViewModelProvider(this).get(SleepViewModel.class);
 
-        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        binding = FragmentSleepBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGallery;
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textSleep;
+        sleepViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
@@ -34,4 +33,5 @@ public class GalleryFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
 }

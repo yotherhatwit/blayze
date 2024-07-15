@@ -10,16 +10,29 @@
         android:name="com.blayze.blayze.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.blayze.blayze.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_insights"
+        android:name="com.blayze.blayze.ui.insights.InsightsFragment"
+        android:label="@string/menu_journal"
+        tools:layout="@layout/fragment_insights" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.blayze.blayze.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_journal"
+        android:name="com.blayze.blayze.ui.journal.JournalFragment"
+        android:label="@string/menu_journal"
+        tools:layout="@layout/fragment_journal" />
+    <fragment
+        android:id="@+id/nav_water"
+        android:name="com.blayze.blayze.ui.water.WaterFragment"
+        android:label="@string/menu_water"
+        tools:layout="@layout/fragment_water" />
+    <fragment
+        android:id="@+id/nav_meditation"
+        android:name="com.blayze.blayze.ui.meditation.MeditationFragment"
+        android:label="@string/menu_meditation"
+        tools:layout="@layout/fragment_meditation" />
+    <fragment
+        android:id="@+id/nav_sleep"
+        android:name="com.blayze.blayze.ui.sleep.SleepFragment"
+        android:label="@string/menu_sleep"
+        tools:layout="@layout/fragment_sleep" />
 </navigation>
