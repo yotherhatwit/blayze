@@ -13,4 +13,5 @@
     <string name="menu_water">Water</string>
     <string name="menu_meditation">Meditation</string>
     <string name="menu_sleep">Sleep</string>
+    <string name="welcome_text">Welcome to Blayze!</string>
 </resources>
