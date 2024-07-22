@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Oranges -->
+    <color name="orange_light">#FFB74D</color> <!-- Lighter Orange -->
+    <color name="orange">#FF9800</color> <!-- Standard Orange -->
+    <color name="orange_dark">#F57C00</color> <!-- Darker Orange -->
+    <color name="orange_darker">#E65100</color> <!-- Even Darker Orange -->
+
+    <!-- Greys -->
+    <color name="grey_light">#F5F5F5</color> <!-- Light Grey -->
+    <color name="grey">#9E9E9E</color> <!-- Medium Grey -->
+    <color name="grey_dark">#616161</color> <!-- Dark Grey -->
+    <color name="grey_darker">#424242</color> <!-- Even Darker Grey -->
+
+    <!-- Blacks -->
+    <color name="black_light">#9E9E9E</color> <!-- Light Black -->
+    <color name="black">#000000</color> <!-- True Black -->
+    <color name="black_dark">#424242</color> <!-- Darker Black -->
+    <color name="black_darker">#212121</color> <!-- Even Darker Black -->
+
+    <!-- Whites -->
+    <color name="white_light">#FFFFFF</color> <!-- Pure White -->
+    <color name="white">#F5F5F5</color> <!-- Off White -->
+    <color name="white_dark">#E0E0E0</color> <!-- Darker White -->
+
+    <!-- Tans -->
+    <color name="tan_light">#D6A67A</color> <!-- Light Tan -->
+    <color name="tan">#D2B48C</color> <!-- Standard Tan -->
+    <color name="tan_dark">#A57B4D</color> <!-- Dark Tan -->
+    <color name="tan_darker">#8E6A3E</color> <!-- Even Darker Tan -->
+
+    <!-- Purples -->
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="purple_200">#CE93D8</color>
+
+    <!-- Teals -->
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
 </resources>
