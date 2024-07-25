@@ -3,36 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_home">
 
+    <!-- Home Fragment -->
     <fragment
         android:id="@+id/nav_home"
         android:name="com.blayze.blayze.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-    <fragment
-        android:id="@+id/nav_insights"
-        android:name="com.blayze.blayze.ui.insights.InsightsFragment"
-        android:label="@string/menu_journal"
-        tools:layout="@layout/fragment_insights" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_journalFragment"
+            app:destination="@id/nav_journal" />
+        <action
+            android:id="@+id/action_homeFragment_to_waterFragment"
+            app:destination="@id/nav_water" />
+        <action
+            android:id="@+id/action_homeFragment_to_insightsFragment"
+            app:destination="@id/nav_insights" />
+        <action
+            android:id="@+id/action_homeFragment_to_sleepFragment"
+            app:destination="@id/nav_sleep" />
+        <action
+            android:id="@+id/action_homeFragment_to_meditationFragment"
+            app:destination="@id/nav_meditation" />
+    </fragment>
+
+    <!-- Journal Fragment -->
     <fragment
         android:id="@+id/nav_journal"
         android:name="com.blayze.blayze.ui.journal.JournalFragment"
         android:label="@string/menu_journal"
         tools:layout="@layout/fragment_journal" />
+
+    <!-- Water Fragment -->
     <fragment
         android:id="@+id/nav_water"
         android:name="com.blayze.blayze.ui.water.WaterFragment"
         android:label="@string/menu_water"
         tools:layout="@layout/fragment_water" />
+
+    <!-- Insights Fragment -->
     <fragment
-        android:id="@+id/nav_meditation"
-        android:name="com.blayze.blayze.ui.meditation.MeditationFragment"
-        android:label="@string/menu_meditation"
-        tools:layout="@layout/fragment_meditation" />
+        android:id="@+id/nav_insights"
+        android:name="com.blayze.blayze.ui.insights.InsightsFragment"
+        android:label="@string/menu_insights"
+        tools:layout="@layout/fragment_insights" />
+
+    <!-- Sleep Fragment -->
     <fragment
         android:id="@+id/nav_sleep"
         android:name="com.blayze.blayze.ui.sleep.SleepFragment"
         android:label="@string/menu_sleep"
         tools:layout="@layout/fragment_sleep" />
+
+    <!-- Meditation Fragment -->
+    <fragment
+        android:id="@+id/nav_meditation"
+        android:name="com.blayze.blayze.ui.meditation.MeditationFragment"
+        android:label="@string/menu_meditation"
+        tools:layout="@layout/fragment_meditation" />
 </navigation>
