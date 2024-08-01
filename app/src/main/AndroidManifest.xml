@@ -12,16 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
+
+        <!-- MainActivity declaration -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity
+            android:name=".ui.journal.ChooseEntryJournal"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".ui.journal.EntryAction"
+            android:exported="true" />
+
     </application>
 
 </manifest>
