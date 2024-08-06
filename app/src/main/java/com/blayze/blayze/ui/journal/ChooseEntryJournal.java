@@ -25,5 +25,7 @@ public class ChooseEntryJournal extends AppCompatActivity {
         Intent intent = new Intent(this, EntryAction.class);
         intent.putExtra("usePrompt", usePrompt);
         startActivity(intent);
+        setResult(AppCompatActivity.RESULT_OK);
+        finish();
     }
 }

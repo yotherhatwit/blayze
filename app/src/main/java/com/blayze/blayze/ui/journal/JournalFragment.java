@@ -8,7 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import com.blayze.blayze.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.text.SimpleDateFormat;
@@ -21,6 +24,13 @@ public class JournalFragment extends Fragment {
     private TextView userName;
     private TextView todaysDate;
     private FloatingActionButton addEntryButton;
+
+    private final ActivityResultLauncher<Intent> chooseEntryLauncher =
+            registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+                if (result.getResultCode() == AppCompatActivity.RESULT_OK) {
+                    // Handle the result if needed
+                }
+            });
 
     @Nullable
     @Override
@@ -41,7 +51,7 @@ public class JournalFragment extends Fragment {
 
     private void showChooseEntryJournalActivity() {
         Intent intent = new Intent(getActivity(), ChooseEntryJournal.class);
-        startActivity(intent);
+        chooseEntryLauncher.launch(intent);
     }
 
     private void updateTodaysDate() {
