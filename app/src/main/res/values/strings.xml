@@ -2,8 +2,8 @@
     <string name="app_name">Blayze</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">User</string>
-    <string name="nav_header_subtitle">user@user.com</string>
+    <string name="nav_header_user">User</string>
+    <string name="nav_header_email">user@user.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
